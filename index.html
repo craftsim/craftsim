@@ -16,28 +16,33 @@
       direction: rtl;
     }
     header {
-      background: #111827;
+      background: linear-gradient(135deg, #1f2937, #374151);
       color: white;
       padding: 2rem;
       text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
     header img {
-      max-height: 100px;
+      max-height: 140px;
       margin-bottom: 1rem;
+      filter: drop-shadow(0 6px 10px rgba(0,0,0,0.6));
+      transform: perspective(600px) rotateY(-6deg) scale(1.05);
     }
     header h1 {
       margin: 0;
-      font-size: 2.8rem;
+      font-size: 3rem;
+      font-weight: 700;
     }
     .hero {
-      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://via.placeholder.com/1200x400') center/cover no-repeat;
-      height: 400px;
+      background: #111827;
+      height: 300px;
       display: flex;
       align-items: center;
       justify-content: center;
       color: white;
-      text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
-      font-size: 2rem;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+      font-size: 2.2rem;
+      border-bottom: 5px solid #d97706;
     }
     .content {
       padding: 2rem;
@@ -51,28 +56,36 @@
     .cta a {
       display: inline-block;
       margin: 0.5rem;
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       color: white;
       text-decoration: none;
-      padding: 0.8rem 1.2rem;
-      border-radius: 0.5rem;
-      transition: background-color 0.3s ease;
+      padding: 0.8rem 1rem;
+      border-radius: 50%;
+      transition: transform 0.3s ease, background-color 0.3s ease;
     }
-    .cta a i {
-      margin-left: 8px;
+    .cta a:hover {
+      transform: scale(1.1);
+      opacity: 0.9;
     }
     .cta a.whatsapp { background-color: #25D366; }
     .cta a.telegram { background-color: #0088cc; }
     .cta a.viber { background-color: #665CAC; }
-    .cta a:hover { opacity: 0.8; }
+    .cta a.map { background-color: #ea580c; }
+    .cta a.map i { font-size: 1.6rem; }
+
     .social-icons {
-      margin-top: 1rem;
+      margin-top: 1.5rem;
     }
     .social-icons a {
       margin: 0 0.5rem;
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       color: #1f2937;
       text-decoration: none;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+    .social-icons a:hover {
+      color: #d97706;
+      transform: scale(1.1);
     }
     footer {
       text-align: center;
@@ -84,7 +97,7 @@
 </head>
 <body>
   <header>
-    <img src="/mnt/data/WhatsApp%20Image%202025-04-24%20%C3%A0%2016.16.14_41205d94.jpg" alt="CraftSim Logo">
+    <img src="/mnt/data/WhatsApp Image 2025-04-24 à 16.16.14_41205d94.jpg" alt="CraftSim Logo">
     <h1>CRAFTSIM</h1>
     <p>نبدع التفاصيل، لنُجمّل المساحات</p>
   </header>
@@ -110,6 +123,8 @@
     <a class="whatsapp" href="https://wa.me/213541686015" target="_blank"><i class="fab fa-whatsapp"></i></a>
     <a class="telegram" href="https://t.me/+213541686015" target="_blank"><i class="fab fa-telegram"></i></a>
     <a class="viber" href="viber://chat?number=+213541686015" target="_blank"><i class="fab fa-viber"></i></a>
+    <a class="map" href="https://maps.app.goo.gl/kYt9WyCNE6dr4wFp9?g_st=aw" target="_blank" title="موقعنا على الخريطة"><i class="fas fa-map-marker-alt"></i></a>
+
     <div class="social-icons">
       <a href="https://www.facebook.com/share/19EPVeMs2o/" target="_blank"><i class="fab fa-facebook"></i></a>
       <a href="https://www.instagram.com/craftsim.dz?igsh=ZHlnMzM2a2JxZWRq" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -122,3 +137,4 @@
   </footer>
 </body>
 </html>
+
